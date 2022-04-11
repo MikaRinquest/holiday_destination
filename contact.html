@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
     <form>
-<input type="text" placeholder="Name and Surname"/><br>
-<input type="text" placeholder="Email Address"/><br>
-<input type="tel" placeholder="Phone Number"/><br>
-<input type="submit" value="Submit"/>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required /><br />
+      <label for="lname">Surname:</label>
+      <input type="text" id="lname" name="lname" required /><br />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required /><br />
+      <label for="contact">Phone Number:</label>
+      <input type="text" id="contact" name="contact" required /><br />
+      <label for="start">Date Holiday Starts:</label>
+      <input type="date" id="start" name="start" required /><br />
+      <label for="end">Date Holiday Ends:</label>
+      <input type="date" id="end" name="end" required /><br />
+      <label for="in">Clock-in Time</label>
+      <input
+        type="time"
+        id="in"
+        name="in"
+        min="06:00"
+        max="10:00"
+        required
+      /><br />
+      <label for="in">Clock-out Time</label>
+      <input
+        type="time"
+        id="out"
+        name="out"
+        min="17:00"
+        max="22:00"
+        required
+      /><br />
+      <input type="submit" value="Submit" />
     </form>
-</body>
+  </body>
 </html>
